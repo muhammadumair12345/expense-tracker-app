@@ -1,0 +1,179 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+  background-color: #f7f7f7;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  background-color: #548654;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 35px #415641;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.logo-image {
+  width: 55px;
+  height: 55px;
+  margin-right: 3px;
+}
+
+/* Balance */
+
+.balance {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 0.5px;
+  text-align: center;
+}
+.balance p {
+  font-size: 45px;
+}
+
+/* Income & Expense */
+
+.income-expense {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #4caf50;
+  box-shadow: inset 0 0 25px #415641;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.income {
+  width: 100%;
+  border-right: 1px solid #006400;
+}
+.income p {
+  color: #006400;
+}
+.expense {
+  width: 100%;
+}
+.expense p {
+  color: red;
+}
+
+/* Transaction */
+
+.transaction {
+  width: 100%;
+}
+
+/* Transaction Menu */
+
+.transaction-menu {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #4caf50;
+  box-shadow: inset 0 0 25px #415641;
+}
+
+/* Transaction List */
+
+.transaction-list {
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.transaction-list .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: inset 0 0 25px #478147;
+  margin: 0;
+  padding: 10px;
+}
+.transaction-list .list-item-history {
+  color: green;
+  font-weight: 700;
+}
+.transaction-list .list-item-history .description {
+  margin-right: 8px;
+}
+.transaction-list .list-item-actions .delete {
+  margin-right: 8px;
+  color: red;
+}
+.transaction-list .list-item-actions .update {
+  margin-right: 8px;
+  color: #ff0;
+}
+
+/* Transaction Graph */
+
+.transaction-graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: inset 0 0 25px #478147;
+}
+
+/* Add Transaction */
+
+.add-transaction {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #4caf50;
+  box-shadow: inset 0 0 25px #415641;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.add-transaction form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 120px;
+}
+.add-transaction input {
+  padding: 8px;
+  border: none;
+}
+.add-transaction input[type="submit"] {
+  background-color: #fff;
+  color: #4caf50;
+  font-weight: bolder;
+  box-shadow: inset 0 0 25px #478147;
+}
