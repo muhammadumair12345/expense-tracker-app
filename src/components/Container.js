@@ -15,7 +15,7 @@ const Container=()=>{
         <div className='container'>
             <Header/>
             <TransactionProvider>
-                <IntlProvider>
+                <IntlProvider locale={"en"}>
                     <Balance/>
                     <IncomeExpense/>
                     <TransactionList/>

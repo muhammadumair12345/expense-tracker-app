@@ -7,30 +7,29 @@ const PieChart = () => {
   const [chartData, setChartData] = useState({});
   const {transactions,income,expense,totalBalance}=useContext(TransactionContext);
 
-  const chart=()=>{
-    setChartData({
-      labels: ['Income', 'Expense', 'Balance'],
-      datasets: [
-        {
-          label: 'Expense Tracker',
-          data: [income,expense,totalBalance],
-          backgroundColor: [
-            'green',
-            'red',
-            'blue',
-          ],
-          borderColor: [
-            'green',
-            'red',
-            'blue',
-          ],
-          borderWidth: 1,
-        },
-      ],
-    });
-  }
-
   useEffect(() => {
+    const chart=()=>{
+      setChartData({
+        labels: ['Income', 'Expense', 'Balance'],
+        datasets: [
+          {
+            label: 'Expense Tracker',
+            data: [income,expense,totalBalance],
+            backgroundColor: [
+              'green',
+              'red',
+              'blue',
+            ],
+            borderColor: [
+              'green',
+              'red',
+              'blue',
+            ],
+            borderWidth: 1,
+          },
+        ],
+      });
+    }
     chart();
   }, [transactions]);
 

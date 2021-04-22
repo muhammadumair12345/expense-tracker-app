@@ -10,7 +10,7 @@ const AddTransaction=()=>{
     useEffect(() => {
         setDescription(updater[0].description) 
         setAmount(updater[0].amount)
-    }, [updater[0]])
+    }, [updater])
 
     function setDescriptionValue(e){
         setDescription(e.target.value) 
