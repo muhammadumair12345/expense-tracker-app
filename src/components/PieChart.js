@@ -5,7 +5,7 @@ import {TransactionContext} from '../context/TransactionContext';
 
 const PieChart = () => {
   const [chartData, setChartData] = useState({});
-  const {transactions,income,expense,totalBalance}=useContext(TransactionContext);
+  const {income,expense,totalBalance}=useContext(TransactionContext);
 
   useEffect(() => {
     const chart=()=>{
@@ -31,7 +31,7 @@ const PieChart = () => {
       });
     }
     chart();
-  }, [transactions]);
+  }, [income,expense,totalBalance]);
 
   return(
     <Pie 
