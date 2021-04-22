@@ -28,7 +28,7 @@ jobs:
         
    # Install npm packages
     - name: Install packages
-      run: npx install
+      run: npm install
 
     # Build react app
     - name: Build the app
