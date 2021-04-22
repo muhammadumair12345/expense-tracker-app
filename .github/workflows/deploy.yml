@@ -32,7 +32,7 @@ jobs:
 
       # Build react app
       - name: Build the app
-        run: npm run build
+        run: CI='' npm run build
 
       - name: Install Surge
         run: npm install -g surge
