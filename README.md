@@ -1,6 +1,6 @@
 # Expense Tracker App
 
-![](/path/to/img.jpg "Title")
+![Expense Tracker App](/path/to/img.jpg "Expense Tracker App")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
