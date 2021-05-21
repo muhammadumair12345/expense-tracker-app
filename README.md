@@ -1,6 +1,6 @@
 # Expense Tracker App
 
-![Expense Tracker App](https://user-images.githubusercontent.com/67727132/118935801-58591280-b965-11eb-9d65-f4e5742f8fb2.png "Expense Tracker App")
+![Expense_Tracker_App](https://user-images.githubusercontent.com/67727132/118935801-58591280-b965-11eb-9d65-f4e5742f8fb2.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
